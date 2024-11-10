@@ -1,0 +1,72 @@
+/**
+ * for easy markdown editor, https://github.com/Ionaru/easy-markdown-editor
+ */
+.editor-toolbar button {
+  color: hsl(var(--muted-foreground)) !important;
+}
+
+.editor-preview-full {
+  max-width: none !important;
+  padding: 1rem !important;
+}
+
+.dark .EasyMDEContainer {
+  border: 1px solid hsl(var(--border));
+  border-radius: 0.375rem;
+  overflow: hidden;
+}
+
+.dark .EasyMDEContainer .CodeMirror {
+  color: hsl(var(--foreground));
+  background-color: hsl(var(--background));
+  border-radius: 0;
+}
+
+.dark .EasyMDEContainer .CodeMirror-scroll {
+  border: none;
+}
+
+.dark .EasyMDEContainer .CodeMirror-gutters {
+  border-right: 1px solid hsl(var(--border));
+  background-color: hsl(var(--background));
+}
+
+.dark .EasyMDEContainer .CodeMirror-linenumber {
+  color: hsl(var(--muted-foreground));
+}
+
+.dark .EasyMDEContainer .CodeMirror-wrap {
+  border: none;
+}
+
+.dark .EasyMDEContainer .CodeMirror-cursor {
+  border-color: hsl(var(--foreground));
+}
+
+.dark .EasyMDEContainer .CodeMirror-selected {
+  background-color: hsl(var(--accent) / 0.3);
+}
+
+.dark .EasyMDEContainer .CodeMirror-line::selection,
+.dark .EasyMDEContainer .CodeMirror-line > span::selection,
+.dark .EasyMDEContainer .CodeMirror-line > span > span::selection {
+  background-color: hsl(var(--accent) / 0.3);
+}
+
+.dark .editor-toolbar {
+  background-color: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  /* border-bottom: none; */
+  border-top-left-radius: 0.375rem;
+  border-top-right-radius: 0.375rem;
+}
+
+.dark .editor-toolbar button:hover,
+.dark .editor-toolbar button.active {
+  background-color: hsl(var(--accent));
+}
+
+/* .dark .editor-preview {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+} */
